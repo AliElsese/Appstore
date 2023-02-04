@@ -1,0 +1,170 @@
+@import url("fonts/fontawesome/css/fontawesome.min.css");
+@import url("fonts/fontawesome/css/brands.min.css");
+@import url("fonts/fontawesome/css/solid.min.css");
+
+@import url("animate.css");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+	padding: 0;
+	direction: rtl;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+a {
+    color: #ddd;
+    transition: all 0.3s ease 0s;
+    text-decoration:none;
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+a:hover {
+    color: #54c5da;
+}
+
+a.active{
+    color: #54c5da;
+}
+
+.btn {
+	color: #ffffff;
+	background: #54c5da;
+	border: 1px solid #54c5da;
+	font-size: 14px;
+	font-weight: 700;
+	text-transform: uppercase;
+	padding: 13px 45px 11px;
+	cursor: pointer;
+}
+
+.btn:hover {
+	color: #54c5da;
+	background-color: #ffffff;
+	border-color: #000;
+}
+
+.separator {
+    color: #fff;
+    background-color: #54c5da;
+    display: inline-block;
+    height: 3px;
+    width: 80px;
+    position: relative;
+}
+
+/*------------------------------- navbar -----------------------------------------------*/
+.header-one {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    z-index: 888;
+}
+
+header nav img {
+	width: 120px;
+	height: 80px;
+}
+
+header ul li {
+    display: inline-block;
+}
+
+.navbar-light .navbar-nav .nav-link{
+    font-size:15px;
+	text-transform:uppercase;
+	font-weight:700;
+    color: rgb(255, 255, 255);
+}
+
+.navbar-light .navbar-nav .nav-link:hover{
+    color: #54c5da;
+}
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: #54c5da;
+}
+
+.dropdown-toggle::after {
+    display:none;
+}
+
+.navbar-light .navbar-toggler {
+    color: #54c5da;
+}
+
+@media (max-width:786px) {
+    header .navbar .navbar-collapse .navbar-nav {
+		width: 100%;
+		padding: 10px;
+        background: rgba(0, 93, 207, 0.4);
+    }
+}
+
+/*------------------------------- breadcrump -------------------------------------------*/
+.page-area {
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 480px;
+}
+
+.breadcrumb-overlay {
+    position: absolute;
+    background: rgba(10, 24, 40, 0.2) none repeat scroll 0 0;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+  
+.breadcrumb {
+    padding-top: 190px;
+    background-color: transparent;
+}
+  
+.breadcrumb .section-headline h3 {
+    font-size: 38px;
+    line-height: 42px;
+    text-transform: uppercase;
+    position: relative;
+    top: 15px;
+    font-weight: 700;
+}
+
+.breadcrumb-row {
+    background-color: rgba(0,0,0,.5);
+    margin-top: -63px;
+    padding: 20px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.breadcrumb-row ul {
+    margin: 0;
+    list-style: none;
+}
+
+.list-inline li {
+    display: inline-block
+}
+
+.card {
+    margin: auto;
+    max-width: 950px;
+    width: 90%;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 1rem;
+    border: transparent
+}
+
+.dashboard {
+	background-color: #eef5f9;
+}
